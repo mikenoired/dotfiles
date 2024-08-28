@@ -19,6 +19,7 @@ dotfiles_echo "Installing dotfiles..."
 dotfiles_echo "Setting up dotfiles..."
 
 # Symlinks
+ln -s "$DOTFILES/.gitconfig" ~/.gitconfig
 ln -s "$DOTFILES/zsh/.zshrc" ~/.zshrc # Zsh
 ln -s "$DOTFILES/nvim" ~/.config/nvim # Neovim
 ln -s "$DOTFILES/starship.toml" ~/.config/starship.toml # Starship
