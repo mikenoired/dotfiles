@@ -19,7 +19,7 @@ dotfiles_echo "Installing dotfiles..."
 dotfiles_echo "Setting up dotfiles..."
 
 # Symlinks
-ln -s "$DOTFILES/.zshrc" ~/.zshrc # Zsh
+ln -s "$DOTFILES/zsh/.zshrc" ~/.zshrc # Zsh
 ln -s "$DOTFILES/nvim" ~/.config/nvim # Neovim
 ln -s "$DOTFILES/starship.toml" ~/.config/starship.toml # Starship
 ln -s "$DOTFILES/.bash_profile "~/.bash_profile # Bash
