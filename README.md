@@ -10,10 +10,9 @@ For installing and next using that dotfiles run this command
 bash <(curl -s https://raw.githubusercontent.com/mikenoired/dotfiles/master/installer.sh)
 ```
 
-Then you can run any of the following scripts
+Then after you've installed dotfiles in your home directory you can run `setup.sh` script:
 
-## Scripts
-
-- `setup` – set up all-in-one
-- `macos` – macOS configuration for first launch.
-- `brew` – install homebrew and apps
+```bash
+cd ~/dotfiles
+./setup.sh
+```
