@@ -17,7 +17,7 @@ plugins=(
     macos
 )
 
-source $ZSH/oh-my-zsh.sh
+. $ZSH/oh-my-zsh.sh
 
 export LANG=en_US.UTF-8
 
@@ -25,10 +25,10 @@ if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
 fi
 
-source "${HOME}/dotfiles/aliases.sh"
+. "${HOME}/dotfiles/aliases.zsh"
 HOOKS_DIR="${HOME}/dotfiles/hooks"
 for file in $HOOKS_DIR/*.sh; do
-  source "$file"
+  . "$file"
 done
 
 eval "$(starship init zsh)"
