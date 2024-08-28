@@ -1,4 +1,5 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
+export DOTFILES="$HOME/dotfiles"
 
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="agnoster"
@@ -25,8 +26,8 @@ if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
 fi
 
-. "${HOME}/dotfiles/aliases.zsh"
-HOOKS_DIR="${HOME}/dotfiles/hooks"
+. "$DOTFILES/aliases.zsh"
+HOOKS_DIR="$DOTFILES/hooks"
 for file in $HOOKS_DIR/*.sh; do
   . "$file"
 done
