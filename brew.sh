@@ -19,7 +19,7 @@ for package in "${PACKAGES[@]}"; do
   echo "✅ Installed $package"
 done
 
-CASKS=("raycast" "telegram" "arc" "discord" "obs" "whisky" "visual-studio-code" "iterm2" "notion" "fork" "keka" "whisky" "vlc")
+CASKS=("raycast" "telegram" "arc" "discord" "obs" "whisky" "zed" "iterm2" "notion" "fork" "keka" "whisky" "vlc")
 for package in "${PACKAGES[@]}"; do
   brew install --cask "$package"
   echo "✅ Installed $package"
