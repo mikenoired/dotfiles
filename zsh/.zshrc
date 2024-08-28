@@ -11,12 +11,16 @@ prompt_dir() {
   prompt_segment blue black '%~'
 }
 
+export NVM_LAZY_LOAD=true
+export NVM_COMPLETION=true
+
 plugins=(
     git
     zsh-autosuggestions
     zsh-syntax-highlighting
     npm
     macos
+    zsh-nvm
 )
 
 . $ZSH/oh-my-zsh.sh
@@ -41,9 +45,5 @@ case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
 fortune | cowsay -f sheep | lolcat
